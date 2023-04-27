@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Google.Protobuf" Version="3.22.3" />
+		<PackageReference Include="Grpc.Core" Version="2.46.6" />
+		<PackageReference Include="Grpc.AspNetCore" Version="2.52.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.54.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="protobuf-net.Grpc.Reflection" Version="1.1.1" />
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AWSSDK.SQS" Version="3.7.100.114" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+		<PackageReference Include="System.ServiceModel.Primitives" Version="4.10.2" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\dn.gRPC.contrato\dn.gRPC.contrato.csproj" />
+	</ItemGroup>
+	
+
+</Project>
+
+		 
